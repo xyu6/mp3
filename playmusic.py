@@ -17,7 +17,7 @@ def task(quit_event):
     bing = BingSpeechAPI(key=BING_KEY)                                        
 
     while not quit_event.is_set():
-        if mic.wakeup(¡®hello¡¯):        
+        if mic.wakeup('respeaker'):        
             print('Wake up')               
             data = mic.listen()            
             try:                      
